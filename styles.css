@@ -1,0 +1,39 @@
+/* Global Styles */
+body {
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    overflow: hidden;
+}
+
+/* Heading Styles */
+h1 {
+    color: #4a90e2;
+    text-align: center;
+    margin: 20px;
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+/* Paragraph Styles */
+p {
+    margin-top: 20px;
+    color: #555;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* Iframe Styles */
+iframe {
+    border: none;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+}
+
+/* Link Styles */
+a {
+    text-decoration: none;
+}
