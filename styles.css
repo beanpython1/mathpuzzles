@@ -92,3 +92,7 @@ body.dark-mode #darkbutton {
 body.dark-mode #darkbutton:hover {
     background-color: #ddd;
 }
+
+.backbutton:hover {
+    filter: sepia(50%);
+}
