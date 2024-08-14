@@ -18,12 +18,12 @@ body {
 }
 
 /* Heading Styles */
-h1 {
-    color: rgb(0, 255, 30);
+img {
     text-align: center;
-    margin: 20px;
-    font-size: 2em;
-    text-decoration: underline;
+    position: fixed;
+    width: 40px;
+    left: 15px;
+    top: 25px;
 }
 
 .dark-mode h1 {
