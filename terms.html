@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algebro's - World of Algebra</title>
+    <link rel="icon" href="icon.png">
+    <style>
+        /* Global Styles */
+        body {
+            background-color: #f0f4f8;
+            background-image: url('background.jpg');
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            overflow: hidden;
+            overflow-x: auto; /* Adds horizontal scrollbar if needed */
+            overflow-y: auto; 
+            justify-content: center;
+            align-items: center;
+        }
+
+        .dark-mode {
+            background-color: black;
+            color: rgb(0, 255, 30);
+        }
+
+        .dark-mode p {
+            color: rgb(0, 255, 30);
+        }
+
+        /* Heading Styles */
+        h1 {
+            color: rgb(130, 188, 249); /* Dark blue for light mode */
+            text-align: center;
+            padding: 20px;
+            background-color: #eaf0f1; /* Light grey-blue background */
+            margin: 0;
+            font-size: 2.5em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-bottom: 2px solid black; /* Black underline */
+        }
+
+        .dark-mode h1 {
+            color: rgb(0, 255, 30); /* Neon green for dark mode */
+            background-color: black;
+            text-shadow: 0 0 5px rgb(0, 255, 30); /* Optional green glow effect */
+        }
+
+        /* Hide worksheets and guides in dark mode */
+        body.dark-mode .worksheet,
+        body.dark-mode .guide {
+            display: none;
+        }
+
+        /* Hide links in dark mode */
+        body.dark-mode .proxy-link {
+            display: block;
+        }
+
+        /* Ensure worksheets and guides are visible in light mode */
+        body:not(.dark-mode) .worksheet,
+        body:not(.dark-mode) .guide {
+            display: block;
+        }
+
+        /* Ensure links are visible in light mode */
+        body:not(.dark-mode) .proxy-link {
+            display: none;
+        }
+
+        /* Paragraph Styles */
+        p {
+            color: #ffffff;
+            text-align: center;
+            font-size: 1em;
+            font-weight: bold;
+            margin: 0 auto;
+        }
+
+        /* Iframe Styles */
+        iframe {
+            border: none;
+            width: 100vw; /* Full viewport width */
+            height: 100vh; /* Full viewport height */
+        }
+
+        /* Link Styles */
+        a {
+            text-decoration: none;
+            color: purple; /* Purple links */
+        }
+
+        a:hover {
+            color: purple; /* Purple on hover */
+        }
+
+        /* Button Styles */
+        #darkbutton {
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #333;
+            color: white;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        #darkbutton:hover {
+            background-color: #555;
+        }
+
+        body.dark-mode #darkbutton {
+            background-color: white;
+            color: #333;
+        }
+
+        body.dark-mode #darkbutton:hover {
+            background-color: #ddd;
+        }
+
+        /* Light Mode Styles */
+        body:not(.dark-mode) {
+            background-color: #ffffff; /* White background */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Worksheet and Guide Styles */
+        .worksheet, .guide {
+            background-color: #ecf0f1; /* Soft grey background */
+            border: 1px solid #bdc3c7; /* Light grey border */
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .worksheet h2, .guide h2 {
+            color: #2c3e50; /* Dark blue for headings */
+        }
+
+        .worksheet p, .guide p {
+            color: #555;
+        }
+
+        .worksheet {
+            display: flex;
+            position: absolute;
+            height: 75%;
+            width: 50%;
+            top: 53%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        img {
+            text-align: center;
+            position: fixed;
+            width: 40px;
+            left: 15px;
+            top: 25px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="introtitle">Terms and Service</h1>
+    <a href="index.html"><img src="back.png" alt="back" class="backbutton"></a>
+    
+    <!-- Fake worksheets and guides visible in light mode -->
+    <div class="worksheet">
+        <p>**Terms of Service**
+
+            **1. Introduction**
+            This website is primarily intended as a resource for learning and practicing mathematics. By accessing and using this site, you agree to comply with these terms.
+            
+            **2. Intended Use**
+            The main purpose of this site is to provide educational content and tools related to mathematics. Users are expected to engage with the site primarily for learning purposes.
+            
+            **3. Proxy Usage**
+            The site may offer proxy features; however, these are intended strictly for use outside of school hours. During school hours, users should focus on the educational content provided, particularly in mathematics. Misuse of the proxy feature during school hours is prohibited.
+            
+            **4. User Responsibilities**
+            Users are responsible for adhering to their school's internet usage policies. The site should not be used to bypass any restrictions or filters during school hours. Misuse of the site in this way may result in access being restricted.
+            
+            **5. Data Collection and Email Privacy**
+            The site may collect information, including email addresses, for purposes such as account creation, communication, and personalized content. Any information collected, including emails, will be used solely for the intended purposes of enhancing user experience and will be handled with care.
+            
+            - **Email Security**: Your email information will be stored securely and will not be shared with third parties without your consent. We are committed to protecting your privacy and ensuring that your information is not used maliciously.
+            - **Email Privacy**: Emails are stored on a spreadsheet, prior to even accessing this site. This is to verify the student from the teachers. At any point you want your email removed, contact a site admin.
+            
+            **6. Updates and Changes**
+            We reserve the right to modify these terms at any time. Any changes will be posted on this page, and continued use of the site after modifications implies acceptance of the updated terms.
+            
+            **7. Contact**
+            If you have any questions or concerns about these terms or the handling of your information, please contact the site administrator. Your feedback is important to us, and we are committed to ensuring a safe and secure environment for all users.</p>
+    </div>
+
+</body>
+</html>
